@@ -36,104 +36,20 @@
         
         var geojsonFeature = {
             
-        
-        "features": [
-                     {
-                     "geometry": {
-                     "coordinates": [
-                                     9.2148902560082639,
-                                     58.714427371009855
-                                     ],
-                     "type": "Point"
-                     },
-                     "properties": {
-                     "adresse": "Idrettshall - Kjempesteinsmyra",
-                     "gnr": 15,
-                     "bnr": 1,
-                     "kommunenr": 901,
-                     "areal": 144,
-                     "byggear": 1990,
-                     "kategori": "76-Rom B",
-                     "kommune": "RISØR",
-                     "distriktsnavn": "Aust-Agder SFD",
-                     "plasser": 240,
-                     "romtype": "Offentlig"
-                     },
-                     "type": "Feature"
-                     },
-                     {
-                     "geometry": {
-                     "coordinates": [
-                                     9.9085568093845176,
-                                     59.77097311352049
-                                     ],
-                     "type": "Point"
-                     },
-                     "properties": {
-                     "adresse": "Stasjonsgata 24",
-                     "gnr": 77,
-                     "bnr": 89,
-                     "kommunenr": 624,
-                     "areal": 347,
-                     "byggear": 1972,
-                     "kategori": "66-Rom",
-                     "kommune": "ØVRE EIKER",
-                     "distriktsnavn": "Buskerud SFD",
-                     "plasser": 385,
-                     "romtype": "Offentlig"
-                     },
-                     "type": "Feature"
-                     },
-                     {
-                     "geometry": {
-                     "coordinates": [
-                                     9.62722810179604,
-                                     59.682179536733607
-                                     ],
-                     "type": "Point"
-                     },
-                     "properties": {
-                     "adresse": "Dyrgravveien 5",
-                     "gnr": 7719,
-                     "bnr": 31,
-                     "kommunenr": 604,
-                     "areal": 557,
-                     "byggear": 1977,
-                     "kategori": "66-Rom",
-                     "kommune": "KONGSBERG",
-                     "distriktsnavn": "Buskerud SFD",
-                     "plasser": 600,
-                     "romtype": "Offentlig"
-                     },
-                     "type": "Feature"
-                     },
-                     {
-                     "geometry": {
-                     "coordinates": [
-                                     9.6517971084146374,
-                                     59.668904138721174
-                                     ],
-                     "type": "Point"
-                     },
-                     "properties": {
-                     "adresse": "Karsches gate 3",
-                     "gnr": 7840,
-                     "bnr": 1,
-                     "kommunenr": 604,
-                     "areal": 270,
-                     "byggear": 1961,
-                     "kategori": "48-Rom",
-                     "kommune": "KONGSBERG",
-                     "distriktsnavn": "Buskerud SFD",
-                     "plasser": 300,
-                     "romtype": "Offentlig"
-                     },
-                     "type": "Feature"
-                     },
-                     
+            "type": "Feature",
+            "properties": {
+                "name": "Coors Field",
+                "amenity": "Baseball Stadium",
+                "popupContent": "This is where the Rockies play!"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-14.99404, 3.75621]
+            }
+        };
 
                         
-        L.geoJSON(geojsonFeature).addTo(mymap),
+                     L.geoJSON(geojsonFeature).addTo(mymap);
         
             </script>
         
