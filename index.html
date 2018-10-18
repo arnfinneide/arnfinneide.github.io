@@ -33,7 +33,7 @@
                         }).addTo(mymap);
                         
                         
-        var trailheadsLayer = L.geoJson(mymap, {
+        var trailheadsLayer = L.geoJson(data, {
             onEachFeature: function(feature, layer) {
             console.log(feature.properties);
             content = "<b>Gnr:</b> " + feature.properties.gnr + "<br><b>Adresse:</b> " + feature.properties.adresse;
