@@ -32,7 +32,14 @@
                         id: 'mapbox.streets'
                         }).addTo(mymap);
                         
-        
+                        
+        var trailheadsLayer = L.geoJson(trailheads, {
+            onEachFeature: function(feature, layer) {
+            console.log(feature.properties);
+            content = "<b>Gnr:</b> " + feature.properties.gnr + "<br><b>Adresse:</b> " + feature.properties.adresse;
+            layer.bindPopup(content);
+                                                        }
+                                                        }).addTo(map);
         
         var geojsonFeature =
         {
@@ -7312,11 +7319,7 @@
                         
                         L.geoJSON(geojsonFeature).addTo(mymap);
                         
-                        var layerGroup = L.geoJSON(data, {
-                                                   onEachFeature: function (feature, layer) {
-                                                   layer.bindPopup('<h1>'+feature.properties.f1+'</h1><p>name: '+feature.properties.f2+'</p>');
-                                                   }
-                                                   }).addTo(mymap);
+                    
                                                 
         
             </script>
